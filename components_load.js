@@ -16,11 +16,11 @@ function load(selector, url) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  load("#nav-placeholder", "/components/nav.html").then(highlightActiveNav);
-  load("#sidebar-placeholder", "/components/sidebar.html");
-  load("#footer-placeholder", "/components/footer.html");
+  load("#nav-placeholder", "components/nav.html").then(highlightActiveNav);
+  load("#sidebar-placeholder", "components/sidebar.html");
+  load("#footer-placeholder", "components/footer.html");
   
-  load("#nav-buttons-placeholder", "/components/navigation-buttons.html")
+  load("#nav-buttons-placeholder", "components/navigation-buttons.html")
     .then(initNavigationButtons);
 });
 
