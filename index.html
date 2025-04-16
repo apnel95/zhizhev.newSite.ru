@@ -2,18 +2,55 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Сайт Жижева 112-ПИо</title>
+  <title>Немного про JS фреймворки</title>
   <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly/patternfly.css">
   <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly/patternfly-addons.css">
 </head>
 <body>
-  <main class="pf-c-page">
-    <section class="pf-c-page__main-section pf-m-light">
-      <div class="pf-c-content">
-        <h1>Hello world</h1>
-        <button class="pf-c-button pf-m-primary">Тестовая кнопка</button>
+  <header class="pf-c-page__header">
+    <div class="pf-c-page__header-brand">
+      <a class="pf-c-brand" href="#">Главная</a>
+    </div>
+    <div class="pf-c-page__header-tools">
+      <nav class="pf-c-nav pf-m-horizontal">
+        <ul class="pf-c-nav__list">
+          <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#home">Главная</a></li>
+          <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#about">Страница 1</a></li>
+          <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#contact">Страница 2</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pf-c-page__main">
+    <section class="pf-c-page__main-section">
+      <div id="content" class="pf-c-content">
       </div>
+
+      <nav class="pf-c-pagination pf-u-mt-md" aria-label="Навигация по страницам">
+        <div class="pf-c-pagination__nav">
+          <button class="pf-c-button pf-m-plain" aria-label="Назад">
+            <i class="fas fa-angle-left" aria-hidden="true"></i>
+          </button>
+          <button class="pf-c-button pf-m-plain" aria-label="Вперед">
+            <i class="fas fa-angle-right" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="pf-c-pagination__nav-page-select">
+          <span>Страница</span>
+          <input class="pf-c-form-control" type="number" min="1" max="5" value="1">
+          <span>из 5</span>
+        </div>
+      </nav>
     </section>
   </main>
+  
+  <footer class="pf-c-page__footer pf-u-p-md pf-u-text-align-center">
+    <p>© Жижев Андрей, 112-ПИо. 2025.</p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
