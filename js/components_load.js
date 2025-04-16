@@ -14,8 +14,8 @@ function load(selector, url) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadComponent("#nav-placeholder", "/components/nav.html");
-  loadComponent("#sidebar-placeholder", "/components/sidebar.html");
-  loadComponent("#footer-placeholder", "/components/footer.html");
-  loadComponent("#nav-buttons-placeholder", "/components/navigation-buttons.html");
+  load("#nav-placeholder", "/components/nav.html");
+  load("#sidebar-placeholder", "/components/sidebar.html");
+  load("#footer-placeholder", "/components/footer.html");
+  load("#nav-buttons-placeholder", "/components/navigation-buttons.html");
 });
