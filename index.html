@@ -7,50 +7,17 @@
   <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly/patternfly-addons.css">
 </head>
 <body>
-  <header class="pf-c-page__header">
-    <div class="pf-c-page__header-brand">
-      <a class="pf-c-brand" href="#">Главная</a>
-    </div>
-    <div class="pf-c-page__header-tools">
-      <nav class="pf-c-nav pf-m-horizontal">
-        <ul class="pf-c-nav__list">
-          <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#home">Главная</a></li>
-          <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#about">Страница 1</a></li>
-          <li class="pf-c-nav__item"><a class="pf-c-nav__link" href="#contact">Страница 2</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="pf-c-page__main">
-    <section class="pf-c-page__main-section">
-      <div id="content" class="pf-c-content">
+  <div class="pf-v6-c-sidebar" tabindex="0">
+  <div class="pf-v6-c-sidebar__main">
+    <div class="pf-v6-c-sidebar__panel pf-m-sticky">Sidebar panel</div>
+    <div class="pf-v6-c-sidebar__content">
+      <div class="pf-v6-c-content">
+        <p>Forces the panel to be sticky to the top of the layout.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus nulla id augue dictum commodo. Donec mollis arcu massa, sollicitudin venenatis est rutrum vitae. Integer pulvinar ligula at augue mollis, ac pulvinar arcu semper. Maecenas nisi lorem, malesuada ac lectus nec, porta pretium neque. Ut convallis libero sit amet metus mattis, vel facilisis lorem malesuada. Duis consectetur ante sit amet magna efficitur, a interdum leo vulputate.</p>
+        <p>Praesent at odio nec sapien ultrices tincidunt in non mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis consectetur nisl quis facilisis faucibus. Sed eu bibendum risus. Suspendisse porta euismod tortor, at elementum odio suscipit sed. Cras eget ultrices urna, ac feugiat lectus. Integer a pharetra velit, in imperdiet mi. Phasellus vel hendrerit velit. Vestibulum ut augue vitae erat vulputate bibendum a ut magna.</p>
       </div>
-
-      <nav class="pf-c-pagination pf-u-mt-md" aria-label="Навигация по страницам">
-        <div class="pf-c-pagination__nav">
-          <button class="pf-c-button pf-m-plain" aria-label="Назад">
-            <i class="fas fa-angle-left" aria-hidden="true"></i>
-          </button>
-          <button class="pf-c-button pf-m-plain" aria-label="Вперед">
-            <i class="fas fa-angle-right" aria-hidden="true"></i>
-          </button>
-        </div>
-        <div class="pf-c-pagination__nav-page-select">
-          <span>Страница</span>
-          <input class="pf-c-form-control" type="number" min="1" max="5" value="1">
-          <span>из 5</span>
-        </div>
-      </nav>
-    </section>
-  </main>
-  
-  <footer class="pf-c-page__footer pf-u-p-md pf-u-text-align-center">
-    <p>© Жижев Андрей, 112-ПИо. 2025.</p>
-  </footer>
-
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-  <script src="js/app.js"></script>
+    </div>
+  </div>
+</div>
 </body>
 </html>
