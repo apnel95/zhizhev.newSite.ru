@@ -2,26 +2,39 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Тест</title>
+  <title>React</title>
   <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly/patternfly.css">
   <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly/patternfly-addons.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <main class="pf-c-page__main">
-    <section class="pf-c-page__main-section">
-  <button class="pf-c-button pf-m-plain" aria-label="Назад">
-    <span class="pf-v5-c-icon pf-v5-m-sm">
-      <i class="pf-v5-i-angle-left" aria-hidden="true"></i>
-    </span>
-  </button>
 
-  <button class="pf-c-button pf-m-plain" aria-label="Вперёд">
-    <span class="pf-v5-c-icon pf-v5-m-sm">
-      <i class="pf-v5-i-angle-right" aria-hidden="true"></i>
-    </span>
-  </button>
+  <div id="nav-placeholder"></div>
+
+  <main class="pf-v6-c-page__main">
+    <section class="pf-v6-c-page__main-section">
+      <div class="pf-v6-c-page__main-body">
+
+        <div class="pf-v6-c-sidebar">
+          <div id="sidebar-placeholder"></div>
+          <div class="pf-v6-c-sidebar__content pf-v6-c-content">
+            <div class="framework">
+              <h1>1. React</h1>
+              <p><strong>Разработан:</strong> Facebook</p>
+              <p><strong>Тип:</strong> Библиотека UI</p>
+              <p><strong>Описание:</strong> Используется для построения пользовательских интерфейсов. Применяет виртуальный DOM, что делает его быстрым и эффективным.</p>
+              <p><strong>Плюсы:</strong> Огромное сообщество, JSX, множество инструментов.</p>
+              <p><strong>Минусы:</strong> Не включает всё из коробки, высокий порог входа.</p>
+            </div>
+            <div id="nav-buttons-placeholder"></div>
+          </div>
+        </div>
+
+      </div>
     </section>
   </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="components_load.js"></script>
 </body>
 </html>
