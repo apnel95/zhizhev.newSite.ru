@@ -7,7 +7,40 @@
   <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly/patternfly-addons.css">
 </head>
 <body>
-  <div class="pf-v6-c-action-list">
+  <nav class="pf-v6-c-nav pf-m-horizontal" aria-label="Global">
+    <ul class="pf-v6-c-nav__list" role="list">
+      <li class="pf-v6-c-nav__item">
+        <a href="#" class="pf-v6-c-nav__link pf-m-current" aria-current="page">
+          <span class="pf-v6-c-nav__link-text">Item 1</span>
+        </a>
+      </li>
+      <li class="pf-v6-c-nav__item">
+        <a href="#" class="pf-v6-c-nav__link">
+          <span class="pf-v6-c-nav__link-text">Item 2</span>
+        </a>
+      </li>
+      <li class="pf-v6-c-nav__item">
+        <a href="#" class="pf-v6-c-nav__link">
+          <span class="pf-v6-c-nav__link-text">Item 3</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+  <div class="pf-v6-c-sidebar" tabindex="0">
+    <div class="pf-v6-c-sidebar__main">
+      <div class="pf-v6-c-sidebar__panel pf-m-sticky">Sidebar panel</div>
+      <div class="pf-v6-c-sidebar__content">
+        <div class="pf-v6-c-content">
+          <p>Forces the panel to be sticky to the top of the layout.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus nulla id augue dictum commodo. Donec mollis arcu massa, sollicitudin venenatis est rutrum vitae. Integer pulvinar ligula at augue mollis, ac pulvinar arcu semper. Maecenas nisi lorem, malesuada ac lectus nec, porta pretium neque. Ut convallis libero sit amet metus mattis, vel facilisis lorem malesuada. Duis consectetur ante sit amet magna efficitur, a interdum leo vulputate.</p>
+          <p>Praesent at odio nec sapien ultrices tincidunt in non mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis consectetur nisl quis facilisis faucibus. Sed eu bibendum risus. Suspendisse porta euismod tortor, at elementum odio suscipit sed. Cras eget ultrices urna, ac feugiat lectus. Integer a pharetra velit, in imperdiet mi. Phasellus vel hendrerit velit. Vestibulum ut augue vitae erat vulputate bibendum a ut magna.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="pf-v6-c-action-list">
     <div class="pf-v6-c-action-list__group">
       <div class="pf-v6-c-action-list__item">
         <button class="pf-v6-c-button pf-m-primary" type="button">
@@ -16,24 +49,14 @@
       </div>
       <div class="pf-v6-c-action-list__item">
         <button class="pf-v6-c-button pf-m-secondary" type="button">
-          <span class="pf-v6-c-button__text"> Назад</span>
+          <span class="pf-v6-c-button__text"> Назад </span>
         </button>
       </div>
     </div>
   </div>
-  
-  <div class="pf-v6-c-sidebar" tabindex="0">
-  <div class="pf-v6-c-sidebar__main">
-    <div class="pf-v6-c-sidebar__panel pf-m-sticky">Sidebar panel</div>
-    <div class="pf-v6-c-sidebar__content">
-      <div class="pf-v6-c-content">
-        <p>Forces the panel to be sticky to the top of the layout.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus nulla id augue dictum commodo. Donec mollis arcu massa, sollicitudin venenatis est rutrum vitae. Integer pulvinar ligula at augue mollis, ac pulvinar arcu semper. Maecenas nisi lorem, malesuada ac lectus nec, porta pretium neque. Ut convallis libero sit amet metus mattis, vel facilisis lorem malesuada. Duis consectetur ante sit amet magna efficitur, a interdum leo vulputate.</p>
-        <p>Praesent at odio nec sapien ultrices tincidunt in non mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis consectetur nisl quis facilisis faucibus. Sed eu bibendum risus. Suspendisse porta euismod tortor, at elementum odio suscipit sed. Cras eget ultrices urna, ac feugiat lectus. Integer a pharetra velit, in imperdiet mi. Phasellus vel hendrerit velit. Vestibulum ut augue vitae erat vulputate bibendum a ut magna.</p>
-      </div>
-    </div>
-  </div>
-</div>
-  
+
+  <footer class="pf-v6-c-panel__footer">
+    <p>&copy; Жижев Андрей, 112-ПИо, 2025.</p>
+  </footer>
 </body>
 </html>
