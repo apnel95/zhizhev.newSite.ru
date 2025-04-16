@@ -18,9 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   load("#sidebar-placeholder", "components/sidebar.html");
   load("#footer-placeholder", "components/footer.html");
   load("#nav-buttons-placeholder", "components/navigation-buttons.html");
-});
 
-document.addEventListener("DOMContentLoaded", () => {
   const nextButton = document.querySelector('.pf-v6-c-button.pf-m-primary');
   const backButton = document.querySelector('.pf-v6-c-button.pf-m-secondary');
 
