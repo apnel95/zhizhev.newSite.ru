@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const path = window.location.pathname;
   const filename = path.substring(path.lastIndexOf('/') + 1);
 
-  const pages = ['index.html', 'page1.html', 'page2.html', 'page3.html', 'page4.html', 'page5.html', 'page6.html', 'page7.html'];
+  const pages = ['index.html', 'page1.html', 'page2.html', 'page3.html', 'page4.html', 'page5.html', 'page6.html', 'page7.html', 'page8.html'];
   const currentIndex = pages.indexOf(filename);
 
   if (currentIndex === -1) {
