@@ -1,90 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Немного про JS фреймворки</title>
-    <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly/patternfly.css">
-    <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly/patternfly-addons.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Главная</title>
+  <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly/patternfly.css">
+  <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly/patternfly-addons.css">
+</head>
+<body>
 
-<style>
-    .pf-v6-c-panel__footer {
-    margin-top: auto;
-    padding: 1rem;
-    background: #f0f0f0;
-    text-align: center;
-  }
-</style>
-  </head>
-  
-  <body>
-    <div class="pf-v6-c-page">
-      <header class="pf-v6-c-masthead">
-        <div class="pf-v6-c-masthead__main">
-          <nav class="pf-v6-c-nav pf-m-horizontal" aria-label="Global">
-            <ul class="pf-v6-c-nav__list" role="list">
-              <li class="pf-v6-c-nav__item">
-                <a href="#" class="pf-v6-c-nav__link pf-m-current" aria-current="page">
-                  <span class="pf-v6-c-nav__link-text">Item 1</span>
-                </a>
-              </li>
-              <li class="pf-v6-c-nav__item">
-                <a href="#" class="pf-v6-c-nav__link">
-                  <span class="pf-v6-c-nav__link-text">Item 2</span>
-                </a>
-              </li>
-              <li class="pf-v6-c-nav__item">
-                <a href="#" class="pf-v6-c-nav__link">
-                  <span class="pf-v6-c-nav__link-text">Item 3</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+  <div id="nav-placeholder"></div>
+
+  <main class="pf-v6-c-page__main">
+    <section class="pf-v6-c-page__main-section">
+      <div class="pf-v6-c-page__main-body">
+
+        <div class="pf-v6-c-sidebar">
+          <div id="sidebar-placeholder"></div>
+          <div class="pf-v6-c-sidebar__content pf-v6-c-content">
+            <h1>Обзор JavaScript Фреймворков</h1>
+            <p>Это главная страница. Здесь будет описание.</p>
+
+            <div id="nav-buttons-placeholder"></div>
+          </div>
         </div>
-        <div class="pf-v6-c-masthead__content">
-        </div>
-      </header>
-    
-      <div class="pf-v6-c-page__main-container" tabindex="-1">
-        <main class="pf-v6-c-page__main" tabindex="-1">
-          <section class="pf-v6-c-page__main-section">
-            <div class="pf-v6-c-page__main-body">
-              <div class="pf-v6-c-sidebar" tabindex="0">
-                <div class="pf-v6-c-sidebar__main">
-                  <div class="pf-v6-c-sidebar__panel pf-m-sticky">Боковая панель (пока пустует)</div>
-                  <div class="pf-v6-c-sidebar__content">
-                    <div class="pf-v6-c-content">
-                    <div class="pf-v6-c-panel">
-                      <div class="pf-v6-c-panel__header"><h1> Обзор JavaScript Фреймворков</h1></div>
-                      <hr class="pf-v6-c-divider" />
-                      <div class="pf-v6-c-panel__main">
-                        <div class="pf-v6-c-panel__main-body">
-                          <p>Нажмите "Далее", чтобы начать просмотр или воспользуйтесь горизонтальным меню навигации сверху</p>
-                        </div
-                           <div class="pf-v6-c-action-list">
-                            <div class="pf-v6-c-action-list__group">
-                              <div class="pf-v6-c-action-list__item">
-                                <button class="pf-v6-c-button pf-m-primary" type="button">
-                                  <span class="pf-v6-c-button__text">Далее</span>
-                                </button>
-                              </div>
-                              <div class="pf-v6-c-action-list__item">
-                                <button class="pf-v6-c-button pf-m-secondary" type="button">
-                                  <span class="pf-v6-c-button__text">Назад</span>
-                                </button>
-                              </div>
-                            </div>
-                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </main>
+
       </div>
-    </div>
-    <div class="pf-v6-c-panel__footer">Подвал</div>
-  </body>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="/load-components.js"></script>
+</body>
 </html>
