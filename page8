@@ -1,0 +1,102 @@
+	<body>
+		<div id="nav-placeholder"/>
+		<main class="pf-v6-c-page__main">
+			<section class="pf-v6-c-page__main-section">
+				<div class="pf-v6-c-page__main-body">
+					<div class="pf-v6-c-sidebar">
+						<div id="sidebar-placeholder"/>
+						<div class="pf-v6-c-sidebar__content pf-v6-c-content">
+							<div class="framework">
+								<h1>Сравнительная таблица</h1>
+<table class="pf-v6-c-table pf-m-grid-md"
+                    role="grid"
+                    aria-label="This is a simple table example"
+                    id="table-basic">
+									<thead class="pf-v6-c-table__thead">
+										<tr class="pf-v6-c-table__tr" role="row">
+											th class="pf-v6-c-table__th" role="columnheader" scope="col">Фреймворк</th>
+											th class="pf-v6-c-table__th" role="columnheader" scope="col">Тип</th>
+											th class="pf-v6-c-table__th" role="columnheader" scope="col">Виртуальный DOM</th>
+											th class="pf-v6-c-table__th" role="columnheader" scope="col">SSR поддержка</th>
+											th class="pf-v6-c-table__th" role="columnheader" scope="col">Язык</th>
+											th class="pf-v6-c-table__th" role="columnheader" scope="col">Кривая обучения</th>
+											th class="pf-v6-c-table__th" role="columnheader" scope="col">Популярность</th>
+										</tr>
+									</thead>
+									<tbody class="pf-v6-c-table__tbody" role="rowgroup">
+										<tr class="pf-v6-c-table__tr" role="row">
+											<td class="pf-v6-c-table__td" role="cell">React</td>
+											<td class="pf-v6-c-table__td" role="cell">Библиотека UI</td>
+											<td class="pf-v6-c-table__td" role="cell">✅</td>
+											<td class="pf-v6-c-table__td" role="cell">С помощью Next.js</td>
+											<td class="pf-v6-c-table__td" role="cell">JSX/TS</td>
+											<td class="pf-v6-c-table__td" role="cell">Средняя</td>
+											<td class="pf-v6-c-table__td" role="cell">🔥 Очень высокая</td>
+										</tr>
+										<tr class="pf-v6-c-table__tr" role="row">
+											<td class="pf-v6-c-table__td" role="cell">Vue.js</td>
+											<td class="pf-v6-c-table__td" role="cell">Прогрессивный фреймворк</td>
+											<td class="pf-v6-c-table__td" role="cell">✅</td>
+											<td class="pf-v6-c-table__td" role="cell">С помощью Nuxt.js</td>
+											<td class="pf-v6-c-table__td" role="cell">HTML/JS</td>
+											<td class="pf-v6-c-table__td" role="cell">Низкая</td>
+											<td class="pf-v6-c-table__td" role="cell">🔥 Высокая</td>
+										</tr>
+										<tr class="pf-v6-c-table__tr" role="row">
+											<td class="pf-v6-c-table__td" role="cell">Angular</td>
+											<td class="pf-v6-c-table__td" role="cell">Полноценный фреймворк</td>
+											<td class="pf-v6-c-table__td" role="cell">✅</td>
+											<td class="pf-v6-c-table__td" role="cell">✅</td>
+											<td class="pf-v6-c-table__td" role="cell">TypeScript</td>
+											<td class="pf-v6-c-table__td" role="cell">Высокая</td>
+											<td class="pf-v6-c-table__td" role="cell">🔥 Высокая</td>
+										</tr>
+										<tr class="pf-v6-c-table__tr" role="row">
+											<td class="pf-v6-c-table__td" role="cell">Svelte</td>
+											<td class="pf-v6-c-table__td" role="cell">Компилируемый</td>
+											<td class="pf-v6-c-table__td" role="cell">❌</td>
+											<td class="pf-v6-c-table__td" role="cell">✅ (SvelteKit)</td>
+											<td class="pf-v6-c-table__td" role="cell">HTML/JS</td>
+											<td class="pf-v6-c-table__td" role="cell">Низкая</td>
+											<td class="pf-v6-c-table__td" role="cell">🌱 Растёт</td>
+										</tr>
+										<tr class="pf-v6-c-table__tr" role="row">
+											<td class="pf-v6-c-table__td" role="cell">Next.js</td>
+											<td class="pf-v6-c-table__td" role="cell">Фреймворк для React</td>
+											<td class="pf-v6-c-table__td" role="cell">✅</td>
+											<td class="pf-v6-c-table__td" role="cell">✅</td>
+											<td class="pf-v6-c-table__td" role="cell">JSX/TS</td>
+											<td class="pf-v6-c-table__td" role="cell">Средняя</td>
+											<td class="pf-v6-c-table__td" role="cell">🔥 Очень высокая</td>
+										</tr>
+										<tr class="pf-v6-c-table__tr" role="row">
+											<td class="pf-v6-c-table__td" role="cell">Nuxt.js</td>
+											<td class="pf-v6-c-table__td" role="cell">Фреймворк для Vue</td>
+											<td class="pf-v6-c-table__td" role="cell">✅</td>
+											<td class="pf-v6-c-table__td" role="cell">✅</td>
+											<td class="pf-v6-c-table__td" role="cell">HTML/JS</td>
+											<td class="pf-v6-c-table__td" role="cell">Низкая</td>
+											<td class="pf-v6-c-table__td" role="cell">🌱 Средняя</td>
+										</tr>
+										<tr class="pf-v6-c-table__tr" role="row">
+											<td class="pf-v6-c-table__td" role="cell">Ember.js</td>
+											<td class="pf-v6-c-table__td" role="cell">Полноценный фреймворк</td>
+											<td class="pf-v6-c-table__td" role="cell">✅</td>
+											<td class="pf-v6-c-table__td" role="cell">✅</td>
+											<td class="pf-v6-c-table__td" role="cell">Handlebars</td>
+											<td class="pf-v6-c-table__td" role="cell">Высокая</td>
+											<td class="pf-v6-c-table__td" role="cell">⚠️ Низкая</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div id="nav-buttons-placeholder"/>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div id="footer-placeholder"/>
+		<script src="components_load.js"/>
+	</body>
+</html>
