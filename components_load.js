@@ -14,17 +14,34 @@ function load(selector, url) {
     })
     .catch(err => console.error(err));
 }
+function darkTheme() {
+  const applyTheme = (e) => {
+    const isDark = e.matches ?? e;
+    if (isDark) {
+      document.documentElement.classList.add('pf-v6-theme-dark');
+    } else {
+      document.documentElement.classList.remove('pf-v6-theme-dark');
+    }
+  };
+  const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  applyTheme(mediaQuery.matches);
+  mediaQuery.addEventListener('change', applyTheme);
+}
+
 
 document.addEventListener("DOMContentLoaded", () => {
-  load("#nav-placeholder", "components/nav.html").then(highlightActiveNav);
+  darkTheme();
+  load("#nav-placeholder", "components/nav.html").then(activeNav);
   load("#sidebar-placeholder", "components/sidebar.html");
   load("#footer-placeholder", "components/footer.html");
   
   load("#nav-buttons-placeholder", "components/navigation-buttons.html")
-    .then(initNavigationButtons);
+    .then(navBInit);
+
+  
 });
 
-function highlightActiveNav() {
+function activeNav() {
   const path = window.location.pathname;
   const filename = path.substring(path.lastIndexOf('/') + 1) || 'index.html';
 
@@ -43,7 +60,7 @@ function highlightActiveNav() {
   });
 }
 
-function initNavigationButtons() {
+function navBInit() {
   const nextButton = document.querySelector('.pf-v6-c-button.pf-m-primary');
   const backButton = document.querySelector('.pf-v6-c-button.pf-m-secondary');
 
